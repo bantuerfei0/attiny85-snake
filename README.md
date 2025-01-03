@@ -12,7 +12,7 @@ I grew interested in small and portable technology after seeing cool projects on
 
 Btw I made a quick LED christmas tree sculpture on christmas eve as a warmup. (see below)
 
-![Super awesome and cool christmas tree 100%](./media/led_christmas_tree.jpg)
+![Super awesome and cool christmas tree 100%](./media/led_christmas_tree.webp)
 
 This also used the ATTiny to light up the tree in a way where it counts up in binary!
 
@@ -41,7 +41,7 @@ I left it to rot in bed for a day or two while I contemplated my existance. All 
 
 Okay! Sweet. So this is what it currently looks like:
 
-![kind of garbage diagram](./media/fig_1.png)
+![kind of garbage diagram](./media/fig_1.webp)
 
 You may notice I have the buttons on there too. You know- the ones taking up 1/3 of the board. I am planning on using a resistor ladder in in conjunction with the ADC pins on the ATTiny85 to allow multiple inputs on one pin, however I haven't really finished it since I'm running out of space on the breadboard. Maybe bend the leds of the buttons to only take a 3x3 space on the board instead of 3x4...
 
