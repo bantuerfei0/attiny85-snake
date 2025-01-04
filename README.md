@@ -46,3 +46,11 @@ Okay! Sweet. So this is what it currently looks like:
 You may notice I have the buttons on there too. You know- the ones taking up 1/3 of the board. I am planning on using a resistor ladder in in conjunction with the ADC pins on the ATTiny85 to allow multiple inputs on one pin, however I haven't really finished it since I'm running out of space on the breadboard. Maybe bend the leds of the buttons to only take a 3x3 space on the board instead of 3x4...
 
 ### 1/3/2025
+
+It's a new day. I'm planning to get the buttons working today and the rest should all be figuring out the battery and programming the game itself! Oh. I also don't know what register to read for the ADC input. 
+
+An hour or two later... and we have directional input! It took a bit of reading of the ATTiny85 datasheet to figure out how to read the ADC, but we got it!
+
+![working buttons](./media/fig_2.webp)
+
+Okay... now to figure out how snake works. I am not too worried about the space it'll require and the mechanics. HOWEVER, I have no idea how to do random numbers. I either need to have some source of entropy or a good enough algorithm where the output *feels* random
