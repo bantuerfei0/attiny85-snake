@@ -11,9 +11,11 @@
 
 uint16_t analog_read()
 {
-    ADCSRA |= (1<<6); // start conversion
+    ADCSRA |= (1 << 6); // start conversion
     // wait for conversion
-    while ((ADCSRA >> 6) & 1) {}
+    while ((ADCSRA >> 6) & 1)
+    {
+    }
     // ADCL must be read first, ADLAR bit in ADMUX is 0
     return ADCL | (ADCH << 8);
 }
@@ -29,8 +31,10 @@ int main()
     uint8_t j;
     while (1)
     {
-        for (i = 0;i<8;i++) {
-            for (j=0;j<8;j++) {
+        for (i = 0; i < 8; i++)
+        {
+            for (j = 0; j < 8; j++)
+            {
                 set_led(j, i);
                 _delay_ms(10);
             }
