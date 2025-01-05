@@ -53,4 +53,10 @@ An hour or two later... and we have directional input! It took a bit of reading 
 
 ![working buttons](./media/fig_2.webp)
 
-Okay... now to figure out how snake works. I am not too worried about the space it'll require and the mechanics. HOWEVER, I have no idea how to do random numbers. I either need to have some source of entropy or a good enough algorithm where the output *feels* random
+Okay... now to figure out how snake works. I am not too worried about the space it'll require and the mechanics. HOWEVER, I have no idea how to do random numbers. I either need to have some source of entropy or a good enough algorithm where the output *feels* random. (3:16 AM) I'll just be using rand() LOL.
+
+### 1/4/2025
+
+Alright! Today I should figure out how I want to handle input/advancing the game.
+
+OK! Just learned about how to do interrupts in pure C- sweet.  
