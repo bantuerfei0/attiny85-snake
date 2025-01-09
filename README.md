@@ -59,4 +59,10 @@ Okay... now to figure out how snake works. I am not too worried about the space 
 
 Alright! Today I should figure out how I want to handle input/advancing the game.
 
-OK! Just learned about how to do interrupts in pure C- sweet.  
+OK! Just learned about how to do interrupts in pure C- sweet. 
+
+### 1/5/2025
+
+You know, I forgot that AVR had libraries for most of this i.e. registers, interrupts, etc.
+
+I'm going to try and stick with doing it with minimal libraries so I understand what's going on... but I still feel a bit silly.

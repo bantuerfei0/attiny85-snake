@@ -1,9 +1,9 @@
 @echo off
 echo cleaning
-del ".\a.out"
-del ".\a.hex"
+del ".\main.out"
+del ".\main.hex"
 echo compiling
-avr-gcc -Os -mmcu=attiny85 main.c
+avr-gcc -Os -mmcu=attiny85 main.c -o main.out
 echo converting out to ihex
-avr-objcopy -O ihex -j .text -j .data a.out a.hex
-avrdude -P COM3 -p t85 -V -c arduino -U flash:w:a.hex:i
+avr-objcopy -O ihex -j .text -j .data main.out main.hex
+avrdude -P COM7 -p t85 -V -c arduino -U flash:w:main.hex:i

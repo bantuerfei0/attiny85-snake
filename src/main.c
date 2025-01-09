@@ -29,15 +29,56 @@ int main()
 
     uint8_t i;
     uint8_t j;
+    uint16_t input;
     while (1)
     {
-        for (i = 0; i < 8; i++)
+        input = analog_read();
+        if (input > 1000)
         {
-            for (j = 0; j < 8; j++)
-            {
-                set_led(j, i);
-                _delay_ms(10);
-            }
+            set_led(3, 3);
+            set_led(3, 4);
+            set_led(4, 3);
+            set_led(4, 4);
+        }
+        else if (input > 700)
+        {
+            // right
+            set_led(5, 3);
+            set_led(6, 3);
+            set_led(7, 3);
+            set_led(5, 4);
+            set_led(6, 4);
+            set_led(7, 4);
+        }
+        else if (input > 600)
+        {
+            // down
+            set_led(3, 5);
+            set_led(3, 6);
+            set_led(3, 7);
+            set_led(4, 5);
+            set_led(4, 6);
+            set_led(4, 7);
+        }
+        else if (input > 400)
+        {
+            // left
+            set_led(0, 3);
+            set_led(1, 3);
+            set_led(2, 3);
+            set_led(0, 4);
+            set_led(1, 4);
+            set_led(2, 4);
+        }
+        else if (input <= 400)
+        {
+            // up
+            set_led(3, 0);
+            set_led(3, 1);
+            set_led(3, 2);
+            set_led(4, 0);
+            set_led(4, 1);
+            set_led(4, 2);
         }
     }
 }
