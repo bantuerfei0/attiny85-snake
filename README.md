@@ -66,3 +66,10 @@ OK! Just learned about how to do interrupts in pure C- sweet.
 You know, I forgot that AVR had libraries for most of this i.e. registers, interrupts, etc.
 
 I'm going to try and stick with doing it with minimal libraries so I understand what's going on... but I still feel a bit silly.
+
+### 2/6/2025
+
+Okay, so I replaced the burned 788BS 8x8 with a new one. Thought I ordered 788BS but its 788AS and its now inverted. Amazing.
+Also, back from long break since I got that seasonal depression. The game is now done and could use some more tweaks for a better UX. I think I'll use interrupts in the future for the movement of the snake. As of right now, the game noticably gets slower as the snake gets longer... hopefully I can improve this by optimizing (I think) some of the code. Next, I'm going to design the PCB!!! I've never created one before so this should be fun. I mounted a 3.3V cell for testing
+
+![snake game](./media/finished_prototype.webp)

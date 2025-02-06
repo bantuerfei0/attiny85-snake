@@ -56,8 +56,8 @@ void set_led(uint8_t x, uint8_t y)
     uint8_t x_shift = xy_map[x] >> 4;
     uint8_t y_shift = xy_map[y] & 0x0F;
     // all off
-    uint16_t data = 0b0011010001101011;
-    data |= (1 << (15 - x_shift));  // set x
-    data &= ~(1 << (15 - y_shift)); // unset y
+    uint16_t data = 0b1100101110010100;
+    data |= (1 << (15 - y_shift));  // set y
+    data &= ~(1 << (15 - x_shift)); // unset x
     shift_out(data);
 }
